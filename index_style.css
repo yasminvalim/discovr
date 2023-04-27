@@ -1,88 +1,107 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Russo One', sans-serif;
-  color: #333;
-}
-
-nav {
-  background-color: white;
-  height: 60px;
-  border-bottom: 2px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-nav .menu-icon {
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-nav .dvr {
-  color: #0301FF;
-  font-family: 'Russo One', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.discover {
-  color: #ff01d9;
-  font-family: 'Russo One', sans-serif;
-  ;
-  font-size: 72px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 100px;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-.discover:after {
-  content: '//DISCOVR';
-  color: #0301FF;
-  position: absolute;
-  top: 0;
-  left: 2px;
-  clip: rect(0, 800px, 90px, 0);
-  animation: noise-anim 3s infinite linear alternate-reverse;
-}
-
-.discover:before {
-  content: '//DISCOVR';
-  color: cyan;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  clip: rect(0, 800px, 90px, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-.subtitle {
-  color: #080808;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 150px;
-  position: absolute;
-  top: 50%;
-  right: 220px;
-  transform: translateY(-50%);
-}
-
-
-@keyframes noise-anim {
-  0% {
-    transform: translateY(-2px);
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+    color: #333;
   }
 
-  100% {
-    transform: translateY(2px);
+  nav {
+    background-color: white;
+    height: 60px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
   }
-}
+
+  nav .menu-icon {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  nav .dvr {
+    color: #0301FF;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .discover {
+    color: #ff01d9;
+    font-family: 'Russo One', sans-serif;
+    ;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  .discover:after {
+    content: '//DISCOVR';
+    color: #0301FF;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    clip: rect(0, 800px, 90px, 0);
+    animation: noise-anim 3s infinite linear alternate-reverse;
+  }
+
+  .discover:before {
+    content: '//DISCOVR';
+    color: cyan;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    clip: rect(0, 800px, 90px, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+
+  .subtitle {
+    color: #080808;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+    margin-top: 150px;
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: 769px) {
+
+    .discover {
+      font-size: 7rem;
+    }
+
+    .discover:after {
+      clip: rect(0, 800px, 900px, 0);
+    }
+
+    .discover:before {
+      clip: rect(0, 800px, 900px, 0);
+    }
+
+    .subtitle {
+      font-size: 2rem;
+      right: 22%;
+      margin-top: 170px;
+    }
+  }
+
+  @keyframes noise-anim {
+    0% {
+      transform: translateY(-2px);
+    }
+
+    100% {
+      transform: translateY(2px);
+    }
+  }
