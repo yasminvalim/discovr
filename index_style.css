@@ -64,7 +64,7 @@
   .list {
     position: fixed;
     top: 60%;
-    left: 20%;
+    left: 30%;
     text-align: left;
   }
 
@@ -80,7 +80,6 @@
   .discover {
     color: #ff01d9;
     font-family: 'Russo One', sans-serif;
-    ;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
@@ -142,6 +141,17 @@
       font-size: 2rem;
       right: 22%;
       margin-top: 170px;
+    }
+
+    .fullscreen-menu {
+      position: fixed;
+      top: 0;
+      left: -50%;
+    }
+
+    .list {
+      left: 25%;
+      margin-bottom: 30px;
     }
   }
 
