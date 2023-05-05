@@ -130,8 +130,19 @@
     justify-content: center;
     padding: 10px;
     border-radius: 4px;
+    flex-direction: column;
   }
 
+  .star {
+    margin-left: 210px;
+  }
+
+  .fa-star {
+    color: gold;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
 
   .photo {
     display: flex;
@@ -218,44 +229,6 @@
     border: 1px black;
   }
 
-  .star-rating {
-    display: inline-block;
-    font-size: 0;
-    cursor: pointer;
-  }
-
-  .star {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 2px;
-
-    background: .star-rating {
-      display: inline-block;
-      font-size: 0;
-      cursor: pointer;
-    }
-
-    .star {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin: 0 2px;
-      background: url('https://cdn.onlinewebfonts.com/svg/img_464047.png') no-repeat;
-    }
-
-    .star.favorite {
-      width: 25px;
-      height: 25px;
-      background: url('https://icon-library.com/images/empty-star-icon/empty-star-icon-12.jpg') no-repeat;
-    }
-
-    no-repeat;
-  }
-
-  .star.favorite {
-    background: url('path/to/yellow-star.svg') no-repeat;
-  }
 
 
 
@@ -269,6 +242,8 @@
       justify-content: flex-end;
       align-items: flex-end;
     }
+
+
   }
 
 
