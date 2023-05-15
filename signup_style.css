@@ -279,17 +279,28 @@ nav .menu-close-button {
     align-items: flex-end;
   }
 
+
+
+  .welcome {
+
+    top: 10%;
+    left: 40%;
+  }
+
+
   .form-container {
-    margin-left: 255px;
-  }
-}
 
-@keyframes noise-anim {
-  0% {
-    transform: translateY(-2px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
   }
 
-  100% {
-    transform: translateY(2px);
+  @keyframes noise-anim {
+    0% {
+      transform: translateY(-2px);
+    }
+
+    100% {
+      transform: translateY(2px);
+    }
   }
-}
