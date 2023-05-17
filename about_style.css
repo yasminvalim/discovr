@@ -105,7 +105,20 @@ nav .menu-close-button {
 .aboutParagraph {
   color: #080808;
   font-family: 'Helvetica', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  text-align: justify
+}
+
+.articleContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.divisor {
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+
 }
 
 .titleDiscover {
