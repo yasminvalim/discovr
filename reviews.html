@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5f2e6d85dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class>
@@ -36,7 +40,36 @@
       </div>
       <div class="dvr">DVR</div>
     </nav>
+    <div class="titlePlaceholder">
+      <p class="pageTitle">DISCO DECODED:</p>
+      <p class="pageTitle">LET US GUIDE YOU</p>
+    </div>
+    <div class="searchBar">
+      <div class="search-container">
+        <form action="#">
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Search"
+            name="search"
+            class="fas fa-search"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+        <div class="filter-container">
+          <select id="filter-select">
+            <option value="">All</option>
+            <option value="option1">Newest</option>
+            <option value="option2">Oldest</option>
+            <option value="option3">Favorite</option>
+          </select>
+        </div>
+      </div>
+    </div>
+      <div id="myArticleContainer"></div>
 
     <script src="index.js"></script>
-  </body>
+    <script src="favorite.js"></script>
+    <script src="generateArticles.js"></script>
+  </body>  </body>
 </html>

@@ -95,71 +95,92 @@ nav .menu-close-button {
   left: 20px;
 }
 
-.discover {
-  color: #ff01d9;
-  font-family: 'Russo One', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 100px;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  margin-left: 45%;
 }
 
-.discover:after {
-  content: '//DISCOVR';
+.titlePlaceholder {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.pageTitle {
   color: #0301FF;
-  position: absolute;
-  top: 0;
-  left: 2px;
-  clip: rect(0, 800px, 90px, 0);
-  animation: noise-anim 3s infinite linear alternate-reverse;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.discover:before {
-  content: '//DISCOVR';
-  color: cyan;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  clip: rect(0, 800px, 90px, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
+.search-container {
+  text-align: center;
+  flex-direction: row;
+
 }
 
-.subtitle {
-  color: #080808;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1rem;
-  margin-top: 150px;
-  position: absolute;
-  top: 50%;
-  right: 55%;
-  transform: translateY(-50%);
+input[type=text] {
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.filter-container {
+  text-align: center;
+  flex-direction: row;
+
+}
+
+#filter-select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-left: -93px
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(1, 0.5fr);
+  grid-gap: 10px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  margin-top: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.album-cover {
+  width: 300px;
+  height: 300px;
+
+}
+
+.album-title {
+  padding: o;
+  margin-left: 5px;
+}
+
+.fa-star {
+  color: gold;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
 }
 
 @media screen and (min-width: 769px) {
-
-  .discover {
-    font-size: 7rem;
-  }
-
-  .discover:after {
-    clip: rect(0, 800px, 900px, 0);
-  }
-
-  .discover:before {
-    clip: rect(0, 800px, 900px, 0);
-  }
-
-  .subtitle {
-    font-size: 2rem;
-    right: 22%;
-    margin-top: 170px;
-  }
 
   .fullscreen-menu {
     position: flex;
