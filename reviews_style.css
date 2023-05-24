@@ -190,6 +190,28 @@ input[type=text] {
     justify-content: flex-end;
     align-items: flex-end;
   }
+
+  .searchBar {
+    margin-left: 80%;
+  }
+
+
+  .grid-container {
+    display: grid;
+    width: 50%;
+    height: 50%;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 10px;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid-item {
+    margin-top: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
 }
 
 @keyframes noise-anim {
