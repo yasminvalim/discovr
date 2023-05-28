@@ -9,7 +9,7 @@ gridItem.innerHTML = `
         alt="album cover technique"
         class="album-cover"
       />
-      <p class="album-title"> Tecnique - New Order </p>
+      <a href="/article.html" class="album-title"> Tecnique - New Order </a>
       <div class="star">
         <i onclick="myFavorite(this)" class="fa-regular fa-star"></i>
       </div>
